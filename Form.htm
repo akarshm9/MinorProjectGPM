@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> FormToPortfolio</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input[type="text"],
+      
+        input[type="email"],
+        input[type="number"],
+       
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid violet;
+            border-radius: 5px;
+            filter: drop-shadow(0px 0px 2px orange);
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .field {
+            padding: 8px;
+            width: auto;
+            height: auto;
+            margin-top: 2vw;
+            background-color: aliceblue;
+        }
+        .field:hover{
+           border: 2px solid rgb(56, 155, 241);
+           border-radius: 25px;
+        }
+        nav{
+            height: 10vh;
+            width: 100vw;
+            color: white;
+            background-color: green;
+            
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }a{
+            margin: 0vh 3vw 1vh 3vw;
+            color: white;
+            background-color: darkred;
+            width: 7vw;
+            height: auto;
+            font-size: larger;
+        }
+        a:hover{
+            color: darkred;
+            background-color: white;
+        }
+    </style>
+    </head>
+
+    <body>
+        <nav>FormToPortfolio
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+
+            <form>
+                <div class="field">
+                    <label for="name"> First name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="text">Last name</label>
+                    <input type="text" id="LastName" name="name">
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="phone">Phone no. </label>
+                    <input type="number" id="Phone " name="Phone" required>
+                </div>
+                <div class="field">
+                    <label for="Skill1">Skill1 </label>
+                    <input type="text" id="Skill1" name="Skill1" required>
+                    <label for="Skill2">Skill2 </label>
+                    <input type="text" id="Skill2" name="Skill2" required>
+                    <label for="Skill3">Skill3 </label>
+                    <input type="text" id="Skill3" name="Skill3" required>
+                </div>
+                <div class="field">
+                    <label for="message">Introduction about yourself</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div id="button">
+                <input type="submit" value="Submit">
+            </div>
+
+
+            </form>
+        </div>
+
+    </body>
+
+</html>
